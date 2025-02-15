@@ -40,8 +40,8 @@ JS Back-End Exam preparation february 2025
  - [x] Add authService with register
  - [x] Install bcrypt `npm i bcrypt`
  - [x] Hash password
- - [ ] Check rePassword
- - [ ] Check if user exists
+ - [x] Check confirmPassword (in authService)
+ - [x] Check if user exists (in authService )
  - [ ] 
  6. Login
  - [ ] 
