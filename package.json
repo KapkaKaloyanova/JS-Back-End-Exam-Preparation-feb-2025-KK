@@ -1,0 +1,27 @@
+{
+  "name": "JS Back-End Exam prep - TechStore",
+  "version": "1.0.0",
+  "description": "JS Back-End Exam preparation february 2025",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KapkaKaloyanova/JS-Back-End-Exam-Preparation-feb-2025-KK.git"
+  },
+  "author": "Kapka Kaloyanova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KapkaKaloyanova/JS-Back-End-Exam-Preparation-feb-2025-KK/issues"
+  },
+  "homepage": "https://github.com/KapkaKaloyanova/JS-Back-End-Exam-Preparation-feb-2025-KK#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
