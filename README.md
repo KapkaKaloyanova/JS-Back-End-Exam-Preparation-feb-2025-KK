@@ -23,7 +23,7 @@ JS Back-End Exam preparation february 2025
  - [x] Config handlebars as view engine (app.set('view engine', ...))
  - [x] Change view directory (app.set('views', ...))
  - [x] Add template resources to folder (initial views)
- - [ ] 
- - [ ] 
+ - [x] Add home view
+ - [x] Add layout
  - [ ] 
  - [ ] 

@@ -4,7 +4,7 @@ const homeController = Router();
 
 // express setup initial http server
 homeController.get('/', (req, res) => {
-    res.send('It works');
+    res.render('home');
 })
 
 export default homeController;
