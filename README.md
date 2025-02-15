@@ -49,10 +49,10 @@ JS Back-End Exam preparation february 2025
  - [x] Add login view
  - [x] Add get login action (authController.get/login)
  - [x] Fix login form
- - [ ] Add post login action (authController.post/login)
- - [ ] Add login to authService
- - [ ] Validate user
- - [ ] Validate password
+ - [x] Add post login action (authController.post/login)
+ - [x] Add login to authService
+ - [x] Validate user
+ - [x] Validate password
  - [ ] Generate token on success login
  - [ ] Return token as cookie
  - [ ] Auto login on register
