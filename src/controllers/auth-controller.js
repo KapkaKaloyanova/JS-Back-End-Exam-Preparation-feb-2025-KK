@@ -14,6 +14,10 @@ authController.post('/register', (req, res) => {
     authService.register(userData);
 
     res.redirect('/auth/login');
-})
+});
+
+authController.get('/login', (req, res) => { 
+    res.render('auth/login');
+});
 
 export default authController;

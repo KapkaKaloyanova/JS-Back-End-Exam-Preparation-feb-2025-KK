@@ -1,6 +1,7 @@
 import express, { Router } from 'express';
 import handlebars from 'express-handlebars';
 import mongoose from 'mongoose';
+import cookieParser from 'cookie-parser';
 
 import routes from './routes.js';
 
@@ -26,9 +27,10 @@ app.engine('hbs', handlebars.engine({
 app.set('view engine', 'hbs');
 app.set('views', './src/views');
 
-// Static middleware
+// Express setup 
 app.use(express.static('src/public'));
-app.use(express.urlencoded({ extended: false }))
+app.use(express.urlencoded({ extended: false }));
+app.use(cookieParser());
 app.use(routes);
 
 // Start express

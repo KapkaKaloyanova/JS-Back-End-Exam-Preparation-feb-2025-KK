@@ -33,19 +33,31 @@ JS Back-End Exam preparation february 2025
  5. Register
  - [x] Fix navigation links
  - [x] Add register view
- - [x] Add authController (authController.get)
+ - [x] Add authController (authController.get/register)
  - [x] Add register page
  - [x] Fix register form
- - [x] Add post register action (authController.post)
+ - [x] Add post register action (authController.post/register)
  - [x] Add authService with register
  - [x] Install bcrypt `npm i bcrypt`
  - [x] Hash password
  - [x] Check confirmPassword (in authService)
  - [x] Check if user exists (in authService )
- - [ ] 
  6. Login
- - [ ] 
+ - [x] Add cookie-parser `npm i cookie-parser`
+ - [x] Add jsonwebtoken `npm i jsonwebtoken`
+ - [x] Add cookie-parser middleware
+ - [x] Add login view
+ - [x] Add get login action (authController.get/login)
+ - [x] Fix login form
+ - [ ] Add post login action (authController.post/login)
+ - [ ] Add login to authService
+ - [ ] Validate user
+ - [ ] Validate password
+ - [ ] Generate token on success login
+ - [ ] Return token as cookie
+ - [ ] Auto login on register
  7. Logout
+ - [ ] 
  - [ ] 
  8. Authentication and Authorization
  - [ ] 
