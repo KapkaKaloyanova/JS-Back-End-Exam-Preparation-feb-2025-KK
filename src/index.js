@@ -1,7 +1,15 @@
 import express from 'express';
-
+import handlebars from 'express-handlebars';
 
 const app = express();
+
+// Setup handlebars
+app.engine('hbs', handlebars.engine({
+    extname: 'hbs',
+}));
+
+app.set('view engine', 'hbs');
+app.set('views', './src');
 
 // express config
 app.get('/', (req, res) => { 
