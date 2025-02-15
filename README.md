@@ -10,7 +10,7 @@ JS Back-End Exam preparation february 2025
  - [x] Add start/dev scripts
  - [x] Add startup file in src folder
  - [x] Setup debugging `run and debug/add configuration with nodemon`
- 2. Express
+2. Express
  - [x] Install express `npm i express` 
  - [x] Setup initial http server (import/app instance/app.get/app.listen(3000))
  - [x] Add public resources (images, css, ...) !!!
@@ -21,16 +21,17 @@ JS Back-End Exam preparation february 2025
 3. Handlebars
  - [x] Install `npm i express-handlebars`
  - [x] Config handlebars as view engine (app.set('view engine', ...))
+ - [x] Enable mongo documents to be passed to the view (index/app.engine{runtime options: allowProtoPropertiesByDefault})
  - [x] Change view directory (app.set('views', ...))
  - [x] Add template resources to folder (initial views)
  - [x] Add home view
  - [x] Add layout
  - [x] Add partials dir
- 4. Database
+4. Database
  - [x] Install `npm i mongoose`
  - [x] Setup db connection (try/catch)
  - [x] Add user model/schema
- 5. Register
+5. Register
  - [x] Fix navigation links
  - [x] Add register view
  - [x] Add authController (authController.get/register)
@@ -42,8 +43,7 @@ JS Back-End Exam preparation february 2025
  - [x] Hash password
  - [x] Check confirmPassword (in authService)
  - [x] Check if user exists (in authService )
- 6. Login
- - [x] Add cookie-parser `npm i cookie-parser`
+6. Login
  - [x] Add jsonwebtoken `npm i jsonwebtoken`
  - [x] Add cookie-parser middleware
  - [x] Add login view
@@ -56,12 +56,18 @@ JS Back-End Exam preparation february 2025
  - [x] Generate token on success login
  - [x] Return token as cookie
  - [x] Auto login on register 
- 7. Logout
+7. Logout
  - [x] Add get logout action (authController/get/logout)
+8. Authentication 
+ - [x] Add cookie-parser `npm i cookie-parser`
+ - [x] Add auth middleware 
+ - [x] Check if guest
+ - [x] Token verification
+ - [x] Attach user to request
+ - [x] Attach user to handlebars context (res locals)
+9. Authorization
+ - [ ] Add isAuth middleware
+ - [ ] Add route guards authorization
  - [ ] 
- 8. Authentication and Authorization
- - [ ] 
- 9. Navigation
-  - [ ] 
- 10. Error handling
+10. Error handling
   - [ ] 
