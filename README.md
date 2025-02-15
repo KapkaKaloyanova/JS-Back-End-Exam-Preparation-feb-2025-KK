@@ -30,10 +30,18 @@ JS Back-End Exam preparation february 2025
  - [x] Install `npm i mongoose`
  - [x] Setup db connection (try/catch)
  - [x] Add user model/schema
- - [ ] 
- - [ ] 
- - [ ] 
  5. Register
+ - [x] Fix navigation links
+ - [x] Add register view
+ - [x] Add authController (authController.get)
+ - [x] Add register page
+ - [x] Fix register form
+ - [x] Add post register action (authController.post)
+ - [ ] Add authService with register
+ - [ ] Install bcrypt
+ - [ ] Hash password
+ - [ ] Check rePassword
+ - [ ] Check if user exists
  - [ ] 
  6. Login
  - [ ] 
