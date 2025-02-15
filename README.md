@@ -57,7 +57,7 @@ JS Back-End Exam preparation february 2025
  - [x] Return token as cookie
  - [x] Auto login on register 
  7. Logout
- - [ ] 
+ - [x] Add get logout action (authController/get/logout)
  - [ ] 
  8. Authentication and Authorization
  - [ ] 
