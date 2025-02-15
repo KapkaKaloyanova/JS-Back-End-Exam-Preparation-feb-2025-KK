@@ -1,11 +1,22 @@
 import express, { Router } from 'express';
 import handlebars from 'express-handlebars';
-import path from 'path';
-
+import mongoose from 'mongoose';
 
 import routes from './routes.js';
 
 const app = express();
+
+// Db setup
+try {
+    // TODO: change db name
+    const uri = 'mongodb://localhost:27017/techStore';
+    await mongoose.connect(uri)
+    console.log('DB connected!');
+} catch (err) {
+    console.error('Cannot connect to DB!');
+    console.log(err.message);
+
+}
 
 // Config handlebars
 app.engine('hbs', handlebars.engine({

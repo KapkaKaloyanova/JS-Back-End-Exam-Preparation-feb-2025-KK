@@ -25,5 +25,23 @@ JS Back-End Exam preparation february 2025
  - [x] Add template resources to folder (initial views)
  - [x] Add home view
  - [x] Add layout
+ - [x] Add partials dir
+ 4. Database
+ - [x] Install `npm i mongoose`
+ - [x] Setup db connection (try/catch)
+ - [x] Add user model/schema
  - [ ] 
  - [ ] 
+ - [ ] 
+ 5. Register
+ - [ ] 
+ 6. Login
+ - [ ] 
+ 7. Logout
+ - [ ] 
+ 8. Authentication and Authorization
+ - [ ] 
+ 9. Navigation
+  - [ ] 
+ 10. Error handling
+  - [ ] 
