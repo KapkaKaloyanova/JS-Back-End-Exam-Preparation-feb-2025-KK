@@ -22,6 +22,10 @@ try {
 // Config handlebars
 app.engine('hbs', handlebars.engine({
     extname: 'hbs',
+    runtimeOptions: {
+        // allowProtoPropertiesByDefault: true,
+        allowProtoMethodsByDefault:true,
+    }
 }));
 
 app.set('view engine', 'hbs');
