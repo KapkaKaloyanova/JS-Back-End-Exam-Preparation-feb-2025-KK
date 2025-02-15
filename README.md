@@ -53,9 +53,9 @@ JS Back-End Exam preparation february 2025
  - [x] Add login to authService
  - [x] Validate user
  - [x] Validate password
- - [ ] Generate token on success login
- - [ ] Return token as cookie
- - [ ] Auto login on register
+ - [x] Generate token on success login
+ - [x] Return token as cookie
+ - [x] Auto login on register 
  7. Logout
  - [ ] 
  - [ ] 
