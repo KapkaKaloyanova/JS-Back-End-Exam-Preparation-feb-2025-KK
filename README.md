@@ -37,7 +37,7 @@ JS Back-End Exam preparation february 2025
  - [x] Add register page
  - [x] Fix register form
  - [x] Add post register action (authController.post)
- - [ ] Add authService with register
+ - [x] Add authService with register
  - [ ] Install bcrypt
  - [ ] Hash password
  - [ ] Check rePassword
