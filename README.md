@@ -66,8 +66,16 @@ JS Back-End Exam preparation february 2025
  - [x] Attach user to request
  - [x] Attach user to handlebars context (res locals)
 9. Authorization
- - [ ] Add isAuth middleware
- - [ ] Add route guards authorization
- - [ ] 
-10. Error handling
-  - [ ] 
+ - [x] Add isAuth middleware
+ - [x] Add route guards authorization
+10. Error Handling
+ - [x] Add notifications
+ - [ ] Extract error message
+ - [ ] Add error handling for register
+ - [ ] Add error handling for login
+
+11. Bonus
+ - [ ] Dynamic Navigation
+ - [ ] Async jsonwebtoken
+ - [ ] ViewBag
+ - [ ] Dynamic Titles
