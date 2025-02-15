@@ -15,6 +15,14 @@ JS Back-End Exam preparation february 2025
  - [x] Setup initial http server (import/app instance/app.get/app.listen(3000))
  - [x] Add public resources (images, css, ...) !!!
  - [x] Add static middleware (app.use(express.static))
- - [ ] Add body parser
- - [ ] Add routes modular router
- - [ ]
+ - [x] Add body parser (app.use(express.urlencoded({extended:false})))
+ - [x] Add routes modular router (app.use(routs); - add routes.js)
+3. Handlebars
+ - [ ] 
+ - [ ] 
+ - [ ] 
+ - [ ] 
+ - [ ] 
+ - [ ] 
+ - [ ] 
+ - [ ] 

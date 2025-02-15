@@ -1,5 +1,6 @@
-import express from 'express';
+import express, { Router } from 'express';
 import handlebars from 'express-handlebars';
+import routes from './routes.js';
 
 const app = express();
 
@@ -12,12 +13,9 @@ app.set('view engine', 'hbs');
 app.set('views', './src');
 
 // Static middleware
-app.use('/static', express.static('src/public'));
+app.use(express.static('src/public'));
+app.use(express.urlencoded({ extended: false }))
+app.use(routes);
 
-
-// express setup initial http server
-app.get('/', (req, res) => { 
-    res.send('It works');
-})
-
+// Start express
 app.listen(3000, () => console.log('Server is listening on http://localhost:3000...'))
