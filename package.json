@@ -7,13 +7,14 @@
     "start": "node src/index.js",
     "dev": "nodemon src/index.js"
   },
-  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KapkaKaloyanova/JS-Back-End-Exam-Preparation-feb-2025-KK.git"
   },
+  "keywords": [],
   "author": "Kapka Kaloyanova",
   "license": "ISC",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/KapkaKaloyanova/JS-Back-End-Exam-Preparation-feb-2025-KK/issues"
   },

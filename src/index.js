@@ -11,10 +11,13 @@ app.engine('hbs', handlebars.engine({
 app.set('view engine', 'hbs');
 app.set('views', './src');
 
-// express config
+// Static middleware
+app.use('/static', express.static('src/public'));
+
+
+// express setup initial http server
 app.get('/', (req, res) => { 
-    console.log('Request');
-    res.send('Home');
+    res.send('It works');
 })
 
-app.listen(5000, () => console.log('Server is listening on http://localhost:5000...'))
+app.listen(3000, () => console.log('Server is listening on http://localhost:3000...'))
