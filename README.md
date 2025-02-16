@@ -75,7 +75,8 @@ JS Back-End Exam preparation february 2025
  - [x] Add error handling for login (authController.post/login)
 
 11. Bonus
- - [ ] Dynamic Navigation
+ - [x] Dynamic Navigation !!!
+ - [ ] Dynamic Titles !!!
+
  - [ ] Async jsonwebtoken
  - [ ] ViewBag
- - [ ] Dynamic Titles
