@@ -2,6 +2,7 @@ import { Router } from "express";
 import authService from "../services/auth-service.js";
 import { AUTH_COOKIE_NAME } from "../config.js";
 import { isAuth } from '../middlewares/auth-middleware.js'
+import { getErrorMessage } from "../utils/errorUtils.js";
 
 
 const authController = Router();
@@ -12,12 +13,18 @@ authController.get('/login', (req, res) => {
 
 authController.post('/login', async (req, res) => {
     const { email, password } = req.body;
+    try {
+        const token = await authService.login(email, password);
 
-    const token = await authService.login(email, password);
+        res.cookie(AUTH_COOKIE_NAME, token, { httpOnly: true });
+        res.redirect('/');
+    } catch (err) {
+        res.render('auth/login', {
+            error: getErrorMessage(err),
+            user: { email },
+        });
+    };
 
-    res.cookie(AUTH_COOKIE_NAME, token, { httpOnly: true });
-
-    res.redirect('/');
 });
 
 authController.get('/register', (req, res) => {
@@ -27,10 +34,19 @@ authController.get('/register', (req, res) => {
 authController.post('/register', async (req, res) => {
     const userData = req.body;
 
-    const token = await authService.register(userData);
+    try {
+        const token = await authService.register(userData);
 
-    res.cookie(AUTH_COOKIE_NAME, token, { httpOnly: true });
-    res.redirect('/');
+        res.cookie(AUTH_COOKIE_NAME, token, { httpOnly: true });
+        res.redirect('/');
+    } catch (err) {
+        // const error = getErrorMessage(err);
+        res.render('auth/register', {
+            error: getErrorMessage(err),
+            user: userData
+        });
+    };
+
 });
 
 authController.get('/logout', isAuth, (req, res) => {

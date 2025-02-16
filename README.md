@@ -70,9 +70,9 @@ JS Back-End Exam preparation february 2025
  - [x] Add route guards authorization
 10. Error Handling
  - [x] Add notifications
- - [ ] Extract error message
- - [ ] Add error handling for register
- - [ ] Add error handling for login
+ - [x] Extract error message (utils/error function)
+ - [x] Add error handling for register (authController.post/register)
+ - [x] Add error handling for login (authController.post/login)
 
 11. Bonus
  - [ ] Dynamic Navigation
