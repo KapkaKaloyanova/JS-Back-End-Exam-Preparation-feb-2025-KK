@@ -76,7 +76,8 @@ JS Back-End Exam preparation february 2025
 
 11. Bonus
  - [x] Dynamic Navigation !!!
- - [ ] Dynamic Titles !!!
+ - [x] Dynamic Titles !!!
 
+ - [x] Set titles from view
+ - [ ] TempData
  - [ ] Async jsonwebtoken
- - [ ] ViewBag
